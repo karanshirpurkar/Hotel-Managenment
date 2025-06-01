@@ -3,6 +3,8 @@ import Ordersub_S from './ordersub.module.css';
 import Search from '../assets/search.svg?react';
 import { Createorder } from '../service/service';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+
 
 export default function Ordersub() {
     const [searchQuery, setSearchQuery] = useState('');
@@ -69,7 +71,7 @@ export default function Ordersub() {
             console.log(orderData); // Or send this to your backend
             try {
                 const res = await Createorder(orderData);
-                alert('Order placed successfully!');
+toast.success("Order placed successfully!");
                 navigate("/"); // Redirect on success
                             setCartItems({});
             localStorage.removeItem('cartItems');

@@ -10,11 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroui/alert": "^2.2.19",
     "plotly.js": "^3.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-plotly.js": "^2.6.0",
     "react-router-dom": "^7.6.0",
+    "react-toastify": "^11.0.5",
     "recharts": "^2.15.3"
   },
   "devDependencies": {

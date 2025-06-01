@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { fetchTables, addTable, deleteTable } from "../service/service";
 import styles from "./TableManager.module.css";
 import Png_delete from "../assets/delete.png"; 
+import { toast } from 'react-toastify';
+
 
 export default function TableManager() {
   const [tables, setTables] = useState([]);
@@ -18,8 +20,14 @@ export default function TableManager() {
       const data = await fetchTables();
       setTables(data);
     } catch (error) {
-      alert("Failed to fetch tables");
+      
+      toast.error("Failed to fetch tables");
+
+
+
+  
     }
+
   };
 
   // Add these inside your TableManager component
@@ -32,7 +40,8 @@ const handleAddTable = async () => {
     setTables([...tables, newTable]);
     setShowAddForm(false);
   } catch (error) {
-    alert("Failed to add table");
+toast.error("Failed to add table");
+
   }
 };
 
@@ -45,7 +54,7 @@ const handleDeleteTable = async (tableId) => {
         loadTables();
 
   } catch (error) {
-    alert("Failed to delete table");
+toast.error("Failed to delete table");
   }
 };
   // ...existing handlers...
@@ -57,6 +66,7 @@ const handleDeleteTable = async (tableId) => {
 
   return (
     <div className={styles.container}>
+      
       <h2>Tables</h2>
       {/* 3. Search input */}
        <div >
