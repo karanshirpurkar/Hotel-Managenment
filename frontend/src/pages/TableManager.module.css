@@ -1,0 +1,88 @@
+/* .container {
+    background-color: white;
+    border-radius: 32px;
+    padding: 20px;
+    gap: 50px;
+    height: 95vh;           
+    box-sizing: border-box; 
+} */
+.container h2 {
+    font-size: 22px;
+    color: #565656;
+    margin: 0px;
+}
+
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 30px;
+  margin-top: 10px;
+} */
+
+.container {
+    background-color: white;
+    border-radius: 32px;
+    padding: 20px;
+    gap: 40px;
+    height: 95vh;
+    box-sizing: border-box;
+    min-width: 500px;      /* Add this line */
+    width: 100%;           /* Ensure it can grow */
+    flex: 1;               /* If inside a flex layout */
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.addCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  height: 127px;
+  width: 147px;
+  font-size: 30px;
+}
+
+.tableCard{
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  height: 127px;
+  width: 147px;
+}
+
+
+.tableCard h1{
+    margin: 10px;    
+}
+
+.tableCard button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.addCard {
+  border: 2px dashed #aaa;
+  color: #666;
+  cursor: pointer;
+}

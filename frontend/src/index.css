@@ -1,0 +1,42 @@
+:root {
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+padding: 0;
+background-color: #F0F5F3;
+}
+
+input, select, textarea {
+  transition: 
+    border-color 0.3s cubic-bezier(0.4,0,0.2,1),
+    box-shadow 0.3s cubic-bezier(0.4,0,0.2,1),
+    background-color 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+input:focus, select:focus, textarea:focus,
+input:hover, select:hover, textarea:hover {
+  border-color: #f9f9f9;
+  box-shadow: 0 0 0 2px #e8e8e9;
+  background-color: #f7f8ff;
+  outline: none;
+}
+
+select {
+  transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+  border: 1.5px solid #ccc;
+  background-color: #f7f7fa;
+}
+
+select:focus, select:hover {
+  border-color: #3181A3;
+  box-shadow: 0 0 0 2px #b3d8ef;
+  background-color: #eaf6fb;
+  outline: none;
+}

@@ -1,0 +1,270 @@
+.main {
+    
+    margin-left: auto;
+    margin-right: auto;
+   
+    padding: 20px;
+}
+
+.main h1 {
+    font-family: inter;
+    font-size: 18px;
+    margin-bottom: -9px;
+}
+
+.main h3 {
+    font-family: inter;
+    font-size: 14px;
+    font-weight: 0;
+}
+
+.tab_container {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    padding-right: 10px;
+}
+
+.tab_container p {
+    font-size: 10px;
+    color: #616161;
+}
+
+.tabs {
+    height: 60px;
+    width: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #616161;
+    /* Sets a 2px solid border with tomato color */
+    border-radius: 8px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tabs:hover {
+    background-color: #616161;
+}
+
+.activeTab {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #616161;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+    padding-top: 10px;
+
+}
+
+.activeTab svg {
+    stroke: white !important;
+    fill: white !important;
+    width: 32px;
+    height: 32px;
+    margin-bottom: -5px;
+}
+
+.activeTab p {
+    color: white !important;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    margin-bottom: -5px;
+
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two flexible columns */
+    gap: 25px 10px;
+    margin-top: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Card container */
+.card {
+    background-color: #d9d9d9;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 140px;
+    width: 160px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+
+
+/* Image on top */
+.card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Text container */
+.names {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Title */
+.names h4 {
+    margin: 0px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Price and add icon row */
+.names p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    color: #000;
+}
+
+
+.bottomRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.price {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+
+.quantityControl {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.quantityControl button {
+    background-color: #d9d9d9;
+    border: 0.5px solid #000000;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    color: #333;
+}
+
+
+
+
+.quantityControl span {
+    min-width: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.addButton {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+    padding: 4px 10px;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.addButton:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+.counter p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    background-color: #f3f7f5;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.searchBar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    margin-left: 10px;
+    flex: 1;
+    color: #333;
+}
+
+.searchIcon {
+    color: #bbb;
+    font-size: 18px;
+}
+
+.nextButton {
+    /* position: fixed; */
+    width: 132px;
+    height: 39px;
+    bottom: 20px;
+    background-color: #505050;
+    margin-top: 10px;
+    margin-left: 210px;
+    /* or your brand color */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 13px;
+    z-index: 999;
+    transition: background 0.3s ease;
+}
+
+.nextButton:hover {
+    background-color: #333;
+}
+
+
+/* Hide on tablets and larger */
+/* @media screen and (min-width: 768px) {
+    .main {
+        display: none;
+    }
+} */
