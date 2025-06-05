@@ -1,6 +1,6 @@
-Deployment Link:https://hotel-managenment-8mzd.vercel.app/
-                https://hotel-managenment.vercel.app/
-                https://hotel-managenment.onrender.com
+Deployment Link:1) https://hotel-managenment-8mzd.vercel.app/
+                2) https://hotel-managenment.vercel.app/
+                3) https://hotel-managenment.onrender.com
 
 
 Hotel Management System
